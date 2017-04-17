@@ -1,0 +1,1054 @@
+<!doctype html>
+
+
+
+
+<html class="theme-next pisces" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+    
+
+    
+  
+
+  
+    
+
+    
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lobster Two:300,300italic,400,400italic,700,700italicconsolas:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Sublime Text," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="Package Control1import urllib.request,os,hashlib; h = &amp;apos;df21e130d211cfc94d9b0905775a7c0f&amp;apos; + &amp;apos;1e3d39e33b79698005270310898eea76&amp;apos;; pf = &amp;apos;Package Control.sublime-package&amp;apos;; ipp">
+<meta name="keywords" content="Sublime Text">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Sublime Text 3个人常用插件及设置">
+<meta property="og:url" content="http://yoursite.com/2017/04/07/Sublime-Text-3个人常用插件及设置/index.html">
+<meta property="og:site_name" content="简">
+<meta property="og:description" content="Package Control1import urllib.request,os,hashlib; h = &amp;apos;df21e130d211cfc94d9b0905775a7c0f&amp;apos; + &amp;apos;1e3d39e33b79698005270310898eea76&amp;apos;; pf = &amp;apos;Package Control.sublime-package&amp;apos;; ipp">
+<meta property="og:updated_time" content="2017-04-16T12:21:33.174Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Sublime Text 3个人常用插件及设置">
+<meta name="twitter:description" content="Package Control1import urllib.request,os,hashlib; h = &amp;apos;df21e130d211cfc94d9b0905775a7c0f&amp;apos; + &amp;apos;1e3d39e33b79698005270310898eea76&amp;apos;; pf = &amp;apos;Package Control.sublime-package&amp;apos;; ipp">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: false,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/04/07/Sublime-Text-3个人常用插件及设置/"/>
+
+
+
+
+
+  <title> Sublime Text 3个人常用插件及设置 | 简 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">简</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocapitalize="off" autocomplete="off" autocorrect="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/07/Sublime-Text-3个人常用插件及设置/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Alan Yih">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="简">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Sublime Text 3个人常用插件及设置
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-07T16:49:20+08:00">
+                2017-04-07
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Tools/" itemprop="url" rel="index">
+                    <span itemprop="name">Tools</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+
+          
+          
+             <span id="/2017/04/07/Sublime-Text-3个人常用插件及设置/" class="leancloud_visitors" data-flag-title="Sublime Text 3个人常用插件及设置">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="Package-Control"><a href="#Package-Control" class="headerlink" title="Package Control"></a>Package Control</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">import urllib.request,os,hashlib; h = &apos;df21e130d211cfc94d9b0905775a7c0f&apos; + &apos;1e3d39e33b79698005270310898eea76&apos;; pf = &apos;Package Control.sublime-package&apos;; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( &apos;http://packagecontrol.io/&apos; + pf.replace(&apos; &apos;, &apos;%20&apos;)).read(); dh = hashlib.sha256(by).hexdigest(); print(&apos;Error validating download (got %s instead of %s), please try manual install&apos; % (dh, h)) if dh != h else open(os.path.join( ipp, pf), &apos;wb&apos; ).write(by)</div></pre></td></tr></table></figure>
+<h2 id="Emmet"><a href="#Emmet" class="headerlink" title="Emmet"></a>Emmet</h2><h2 id="Can-I-Use"><a href="#Can-I-Use" class="headerlink" title="Can I Use"></a>Can I Use</h2><h2 id="Gulp"><a href="#Gulp" class="headerlink" title="Gulp"></a>Gulp</h2><h2 id="JavaScript-Completions"><a href="#JavaScript-Completions" class="headerlink" title="JavaScript Completions"></a>JavaScript Completions</h2><h2 id="Java​Script-amp-Node​JS-Snippets"><a href="#Java​Script-amp-Node​JS-Snippets" class="headerlink" title="Java​Script &amp; Node​JS Snippets"></a>Java​Script &amp; Node​JS Snippets</h2><h2 id="Bracket-Highlighter-Preferences-gt-package-settings-gt-Bracket-Highlighter-gt-Bracket-Settings-–-User"><a href="#Bracket-Highlighter-Preferences-gt-package-settings-gt-Bracket-Highlighter-gt-Bracket-Settings-–-User" class="headerlink" title="Bracket Highlighter( Preferences -&gt; package settings -&gt; Bracket Highlighter -&gt; Bracket Settings – User)"></a>Bracket Highlighter( Preferences -&gt; package settings -&gt; Bracket Highlighter -&gt; Bracket Settings – User)</h2><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  "bracket_styles": &#123;</div><div class="line">    "default": &#123;</div><div class="line">      "icon": "dot",</div><div class="line">      // "color": "entity.name.class",</div><div class="line">      "color": "brackethighlighter.default",</div><div class="line">      "style": "highlight"</div><div class="line">    &#125;,</div><div class="line">    "unmatched": &#123;</div><div class="line">      "icon": "question",</div><div class="line">      "color": "brackethighlighter.unmatched",</div><div class="line">      "style": "highlight"</div><div class="line">    &#125;,</div><div class="line">    "curly": &#123;</div><div class="line">      "icon": "curly_bracket",</div><div class="line">      "color": "brackethighlighter.curly",</div><div class="line">      "style": "highlight"</div><div class="line">    &#125;,</div><div class="line">    "round": &#123;</div><div class="line">      "icon": "round_bracket",</div><div class="line">      "color": "brackethighlighter.round",</div><div class="line">      "style": "highlight"</div><div class="line">    &#125;,</div><div class="line">    "square": &#123;</div><div class="line">      "icon": "square_bracket",</div><div class="line">      "color": "brackethighlighter.square",</div><div class="line">      "style": "highlight"</div><div class="line">    &#125;,</div><div class="line">    "angle": &#123;</div><div class="line">      "icon": "angle_bracket",</div><div class="line">      "color": "brackethighlighter.angle",</div><div class="line">      "style": "highlight"</div><div class="line">    &#125;,</div><div class="line">    "tag": &#123;</div><div class="line">      "icon": "tag",</div><div class="line">      "color": "brackethighlighter.tag",</div><div class="line">      "style": "highlight"</div><div class="line">    &#125;,</div><div class="line">    "single_quote": &#123;</div><div class="line">      "icon": "single_quote",</div><div class="line">      "color": "brackethighlighter.quote",</div><div class="line">      "style": "highlight"</div><div class="line">    &#125;,</div><div class="line">    "double_quote": &#123;</div><div class="line">      "icon": "double_quote",</div><div class="line">      "color": "brackethighlighter.quote",</div><div class="line">      "style": "highlight"</div><div class="line">    &#125;,</div><div class="line">    "regex": &#123;</div><div class="line">      "icon": "regex",</div><div class="line">      "color": "brackethighlighter.quote",</div><div class="line">      "style": "outline"</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="ConvertToUTF8"><a href="#ConvertToUTF8" class="headerlink" title="ConvertToUTF8"></a>ConvertToUTF8</h2><h2 id="AutoFileName"><a href="#AutoFileName" class="headerlink" title="AutoFileName"></a>AutoFileName</h2><h2 id="AllAutocomplete"><a href="#AllAutocomplete" class="headerlink" title="AllAutocomplete"></a>AllAutocomplete</h2><h2 id="DocBlockr"><a href="#DocBlockr" class="headerlink" title="DocBlockr"></a>DocBlockr</h2><h2 id="AdvancedNewFile"><a href="#AdvancedNewFile" class="headerlink" title="AdvancedNewFile"></a>AdvancedNewFile</h2><h2 id="Trailing-spaces"><a href="#Trailing-spaces" class="headerlink" title="Trailing spaces"></a>Trailing spaces</h2><h2 id="SideBarEnhancements"><a href="#SideBarEnhancements" class="headerlink" title="SideBarEnhancements"></a>SideBarEnhancements</h2><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">&#123; "keys": ["ctrl+shift+c"], "command": "copy_path" &#125;,</div><div class="line">    //chrome</div><div class="line">&#123;</div><div class="line">  "keys": ["f2"], "command": "side_bar_files_open_with",</div><div class="line">  "args": </div><div class="line">  &#123;</div><div class="line">    "paths": [],</div><div class="line">    "application": "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe",</div><div class="line">    "extensions":".*"</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="Terminal"><a href="#Terminal" class="headerlink" title="Terminal"></a>Terminal</h2><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  // window下终端路径</div><div class="line">  "terminal": "C:/#Alan/software/cmder/Cmder.exe",</div><div class="line">  // window下终端参数</div><div class="line">  "parameters": ["/START", "%CWD%"]</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="Themr"><a href="#Themr" class="headerlink" title="Themr"></a>Themr</h2><h2 id="Seti-UI"><a href="#Seti-UI" class="headerlink" title="Seti_UI"></a>Seti_UI</h2><h2 id="Material-Theme-Appbar"><a href="#Material-Theme-Appbar" class="headerlink" title="Material Theme-Appbar"></a>Material Theme-Appbar</h2><h2 id="Material-Theme"><a href="#Material-Theme" class="headerlink" title="Material Theme"></a>Material Theme</h2><h2 id="Colorsublime：Candy-Crush"><a href="#Colorsublime：Candy-Crush" class="headerlink" title="Colorsublime：Candy Crush"></a>Colorsublime：Candy Crush</h2><h2 id="MarkDownPreview"><a href="#MarkDownPreview" class="headerlink" title="MarkDownPreview"></a>MarkDownPreview</h2><figure class="highlight json"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  <span class="attr">"keys"</span>: [<span class="string">"alt+m"</span>],</div><div class="line">  <span class="attr">"command"</span>: <span class="string">"markdown_preview"</span>,</div><div class="line">  <span class="attr">"args"</span>: &#123; <span class="attr">"target"</span>: <span class="string">"browser"</span>&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="MarkDownEditing"><a href="#MarkDownEditing" class="headerlink" title="MarkDownEditing"></a>MarkDownEditing</h2><h2 id="MarkDown-Extended"><a href="#MarkDown-Extended" class="headerlink" title="MarkDown Extended"></a>MarkDown Extended</h2><h2 id="Sublimeserver"><a href="#Sublimeserver" class="headerlink" title="Sublimeserver"></a>Sublimeserver</h2><h2 id="ColorHighlighter"><a href="#ColorHighlighter" class="headerlink" title="ColorHighlighter"></a>ColorHighlighter</h2><figure class="highlight json"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  <span class="attr">"ha_style"</span>: <span class="string">"filled"</span>,</div><div class="line">  <span class="attr">"icons"</span>: <span class="literal">false</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="HTML-CSS-JS-Prettify"><a href="#HTML-CSS-JS-Prettify" class="headerlink" title="HTML-CSS-JS Prettify"></a>HTML-CSS-JS Prettify</h2><h2 id="jsfmt"><a href="#jsfmt" class="headerlink" title="jsfmt"></a>jsfmt</h2><h2 id="Babel"><a href="#Babel" class="headerlink" title="Babel"></a>Babel</h2><h2 id="Jsformat"><a href="#Jsformat" class="headerlink" title="Jsformat"></a>Jsformat</h2><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  // 在包中设置</div><div class="line">  // 为了支持jsx</div><div class="line">  "e4x": true,</div><div class="line">  // jsformat options</div><div class="line">  "format_on_save": true,</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="React-Es6-Snippets"><a href="#React-Es6-Snippets" class="headerlink" title="React Es6 Snippets"></a>React Es6 Snippets</h2><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">&#123; "keys": ["tab"], "command": "expand_abbreviation_by_tab",</div><div class="line">  "context": [</div><div class="line">    &#123;</div><div class="line">      "operand": "source.js", </div><div class="line">      "operator": "equal", </div><div class="line">      "match_all": true, </div><div class="line">      "key": "selector"</div><div class="line">    &#125;,</div><div class="line">    &#123;   </div><div class="line">      "key": "selection_empty", </div><div class="line">      "operator": "equal", </div><div class="line">      "operand": true,</div><div class="line">      "match_all": true </div><div class="line">    &#125;</div><div class="line">  ]</div><div class="line">&#125;,</div><div class="line">&#123; "keys": ["tab"], "command": "next_field", "context":</div><div class="line">  [</div><div class="line">    &#123; "key": "has_next_field", "operator": "equal", "operand": true &#125;</div><div class="line">  ]</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="常用快捷键"><a href="#常用快捷键" class="headerlink" title="常用快捷键"></a>常用快捷键</h2><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">"Alt + F3"  // 快速全选</div><div class="line">"Ctrl + R" // 快速选择函数和css中的选择器</div><div class="line">"Ctrl + G" // 选择行号</div><div class="line">"Ctrl + :" // 查找变量名、属性名</div><div class="line">"Shift + 鼠标右键拖动" // 快速添加游标</div><div class="line">"Shift + 上下左右" // 选择文字</div><div class="line">"Ctrl + L" // 选择一整行</div><div class="line">"Ctrl + KK" // 从光标处开始删除代码至结尾</div><div class="line">"Ctrl + Shift + " " // 只选择标签，但是属性不变</div><div class="line">"Ctrl + Shift + ;" // 移除标签</div><div class="line">"Ctrl + j" // 合并为一行</div><div class="line">"Ctrl + Shift + j" // 选择父容器中的内容</div><div class="line">"Ctrl + k" // 跳过同名单词</div><div class="line">"Ctrl + M" //  在起始括号和结尾括号之间跳转</div><div class="line">"Ctrl + Shift + M" // 选择&#123;&#125;中所有的内容，使用于css与js</div><div class="line"></div><div class="line">"Alt + Shift + W" // 标签包裹</div><div class="line"></div><div class="line">"Ctrl+Tab" // 当前窗口中的标签页切换</div><div class="line">"Alt+Shift+2" // 左右分屏-2列</div><div class="line">"Ctrl+Shift+分屏序号" // 将当前焦点页分配到分屏序号页</div><div class="line"></div><div class="line">"Ctrl+K+T" // 折叠属性</div><div class="line">"Ctrl+K+0" // 展开所有</div><div class="line"></div><div class="line">"F6" // 单词拼写检查</div></pre></td></tr></table></figure>
+<h2 id="设置"><a href="#设置" class="headerlink" title="设置"></a>设置</h2><figure class="highlight json"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">	<span class="attr">"bold_folder_labels"</span>: <span class="literal">true</span>,</div><div class="line">	<span class="attr">"caret_style"</span>: <span class="string">"phase"</span>,</div><div class="line">	<span class="attr">"color_scheme"</span>: <span class="string">"Packages/Babel/Monokai Phoenix.tmTheme"</span>,</div><div class="line">	<span class="attr">"font_size"</span>: <span class="number">12</span>,</div><div class="line">	<span class="attr">"highlight_line"</span>: <span class="literal">true</span>,</div><div class="line">	<span class="attr">"ignored_packages"</span>:</div><div class="line">	[</div><div class="line">		<span class="string">"Vintage"</span></div><div class="line">	],</div><div class="line">	<span class="attr">"line_padding_bottom"</span>: <span class="number">1</span>,</div><div class="line">	<span class="attr">"line_padding_top"</span>: <span class="number">1</span>,</div><div class="line">	<span class="attr">"rulers"</span>:</div><div class="line">	[</div><div class="line">		<span class="number">80</span>,</div><div class="line">		<span class="number">100</span></div><div class="line">	],</div><div class="line">	<span class="attr">"tab_size"</span>: <span class="number">2</span>,</div><div class="line">	<span class="attr">"theme"</span>: <span class="string">"Seti.sublime-theme"</span>,</div><div class="line">	<span class="attr">"translate_tabs_to_spaces"</span>: <span class="literal">true</span>,</div><div class="line">	<span class="attr">"trim_trailing_white_space_on_save"</span>: <span class="literal">true</span>,</div><div class="line">	<span class="attr">"word_wrap"</span>: <span class="literal">true</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="快捷键设置"><a href="#快捷键设置" class="headerlink" title="快捷键设置"></a>快捷键设置</h2><figure class="highlight json"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div></pre></td><td class="code"><pre><div class="line">[</div><div class="line">  &#123;</div><div class="line">    <span class="attr">"keys"</span>: [</div><div class="line">      <span class="string">"ctrl+shift+c"</span></div><div class="line">    ],</div><div class="line">    <span class="attr">"command"</span>: <span class="string">"copy_path"</span></div><div class="line">  &#125;,</div><div class="line">  &#123;</div><div class="line">    <span class="attr">"keys"</span>: [</div><div class="line">      <span class="string">"f2"</span></div><div class="line">    ],</div><div class="line">    <span class="attr">"command"</span>: <span class="string">"side_bar_files_open_with"</span>,</div><div class="line">    <span class="attr">"args"</span>: &#123;</div><div class="line">      <span class="attr">"paths"</span>: [],</div><div class="line">      <span class="attr">"application"</span>: <span class="string">"C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe"</span>,</div><div class="line">      <span class="attr">"extensions"</span>: <span class="string">".*"</span></div><div class="line">    &#125;</div><div class="line">  &#125;,</div><div class="line">  &#123;</div><div class="line">    <span class="attr">"keys"</span>: [</div><div class="line">      <span class="string">"alt+m"</span></div><div class="line">    ],</div><div class="line">    <span class="attr">"command"</span>: <span class="string">"markdown_preview"</span>,</div><div class="line">    <span class="attr">"args"</span>: &#123;</div><div class="line">      <span class="attr">"target"</span>: <span class="string">"browser"</span></div><div class="line">    &#125;</div><div class="line">  &#125;,</div><div class="line">  &#123;</div><div class="line">    <span class="attr">"keys"</span>: [</div><div class="line">      <span class="string">"tab"</span></div><div class="line">    ],</div><div class="line">    <span class="attr">"command"</span>: <span class="string">"expand_abbreviation_by_tab"</span>,</div><div class="line">    <span class="attr">"context"</span>: [</div><div class="line">      &#123;</div><div class="line">        <span class="attr">"operand"</span>: <span class="string">"source.js"</span>,</div><div class="line">        <span class="attr">"operator"</span>: <span class="string">"equal"</span>,</div><div class="line">        <span class="attr">"match_all"</span>: <span class="literal">true</span>,</div><div class="line">        <span class="attr">"key"</span>: <span class="string">"selector"</span></div><div class="line">      &#125;,</div><div class="line">      &#123;</div><div class="line">        <span class="attr">"key"</span>: <span class="string">"selection_empty"</span>,</div><div class="line">        <span class="attr">"operator"</span>: <span class="string">"equal"</span>,</div><div class="line">        <span class="attr">"operand"</span>: <span class="literal">true</span>,</div><div class="line">        <span class="attr">"match_all"</span>: <span class="literal">true</span></div><div class="line">      &#125;</div><div class="line">    ]</div><div class="line">  &#125;,</div><div class="line">  &#123;</div><div class="line">    <span class="attr">"keys"</span>: [</div><div class="line">      <span class="string">"tab"</span></div><div class="line">    ],</div><div class="line">    <span class="attr">"command"</span>: <span class="string">"next_field"</span>,</div><div class="line">    <span class="attr">"context"</span>: [</div><div class="line">      &#123;</div><div class="line">        <span class="attr">"key"</span>: <span class="string">"has_next_field"</span>,</div><div class="line">        <span class="attr">"operator"</span>: <span class="string">"equal"</span>,</div><div class="line">        <span class="attr">"operand"</span>: <span class="literal">true</span></div><div class="line">      &#125;</div><div class="line">    ]</div><div class="line">  &#125;</div><div class="line">]</div></pre></td></tr></table></figure>
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>如果您看完觉得好，就赏我一个吧！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/images/wechat.jpg" alt="Alan Yih WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="/images/alipay.jpg" alt="Alan Yih Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Sublime-Text/" rel="tag"># Sublime Text</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/04/10/RegExp/" rel="next" title="RegExp">
+                <i class="fa fa-chevron-left"></i> RegExp
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/04/07/使用hexo和github搭建个人博客/" rel="prev" title="使用hexo和github搭建个人博客">
+                使用hexo和github搭建个人博客 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.jpg"
+               alt="Alan Yih" />
+          <p class="site-author-name" itemprop="name">Alan Yih</p>
+           
+              <p class="site-description motion-element" itemprop="description">精致而简约得生活</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">9</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Package-Control"><span class="nav-number">1.</span> <span class="nav-text">Package Control</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Emmet"><span class="nav-number">2.</span> <span class="nav-text">Emmet</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Can-I-Use"><span class="nav-number">3.</span> <span class="nav-text">Can I Use</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Gulp"><span class="nav-number">4.</span> <span class="nav-text">Gulp</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JavaScript-Completions"><span class="nav-number">5.</span> <span class="nav-text">JavaScript Completions</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Java​Script-amp-Node​JS-Snippets"><span class="nav-number">6.</span> <span class="nav-text">Java​Script & Node​JS Snippets</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Bracket-Highlighter-Preferences-gt-package-settings-gt-Bracket-Highlighter-gt-Bracket-Settings-–-User"><span class="nav-number">7.</span> <span class="nav-text">Bracket Highlighter( Preferences -> package settings -> Bracket Highlighter -> Bracket Settings – User)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ConvertToUTF8"><span class="nav-number">8.</span> <span class="nav-text">ConvertToUTF8</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#AutoFileName"><span class="nav-number">9.</span> <span class="nav-text">AutoFileName</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#AllAutocomplete"><span class="nav-number">10.</span> <span class="nav-text">AllAutocomplete</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DocBlockr"><span class="nav-number">11.</span> <span class="nav-text">DocBlockr</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#AdvancedNewFile"><span class="nav-number">12.</span> <span class="nav-text">AdvancedNewFile</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Trailing-spaces"><span class="nav-number">13.</span> <span class="nav-text">Trailing spaces</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SideBarEnhancements"><span class="nav-number">14.</span> <span class="nav-text">SideBarEnhancements</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Terminal"><span class="nav-number">15.</span> <span class="nav-text">Terminal</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Themr"><span class="nav-number">16.</span> <span class="nav-text">Themr</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Seti-UI"><span class="nav-number">17.</span> <span class="nav-text">Seti_UI</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Material-Theme-Appbar"><span class="nav-number">18.</span> <span class="nav-text">Material Theme-Appbar</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Material-Theme"><span class="nav-number">19.</span> <span class="nav-text">Material Theme</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Colorsublime：Candy-Crush"><span class="nav-number">20.</span> <span class="nav-text">Colorsublime：Candy Crush</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MarkDownPreview"><span class="nav-number">21.</span> <span class="nav-text">MarkDownPreview</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MarkDownEditing"><span class="nav-number">22.</span> <span class="nav-text">MarkDownEditing</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MarkDown-Extended"><span class="nav-number">23.</span> <span class="nav-text">MarkDown Extended</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Sublimeserver"><span class="nav-number">24.</span> <span class="nav-text">Sublimeserver</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ColorHighlighter"><span class="nav-number">25.</span> <span class="nav-text">ColorHighlighter</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML-CSS-JS-Prettify"><span class="nav-number">26.</span> <span class="nav-text">HTML-CSS-JS Prettify</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#jsfmt"><span class="nav-number">27.</span> <span class="nav-text">jsfmt</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Babel"><span class="nav-number">28.</span> <span class="nav-text">Babel</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Jsformat"><span class="nav-number">29.</span> <span class="nav-text">Jsformat</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#React-Es6-Snippets"><span class="nav-number">30.</span> <span class="nav-text">React Es6 Snippets</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用快捷键"><span class="nav-number">31.</span> <span class="nav-text">常用快捷键</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设置"><span class="nav-number">32.</span> <span class="nav-text">设置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#快捷键设置"><span class="nav-number">33.</span> <span class="nav-text">快捷键设置</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Alan Yih</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>本站访客数
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      人次
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>本站总访问量
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      次
+    </span>
+  
+</div>
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="true"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+      search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.popup').toggle();
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+      $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = $( "entry", xmlResponse ).map(function() {
+            return {
+              title: $( "title", this ).text(),
+              content: $("content",this).text(),
+              url: $( "url" , this).text()
+            };
+          }).get();
+          var $input = document.getElementById(search_id);
+          var $resultContent = document.getElementById(content_id);
+          $input.addEventListener('input', function(){
+            var matchcounts = 0;
+            var str='<ul class=\"search-result-list\">';
+            var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+            $resultContent.innerHTML = "";
+            if (this.value.trim().length > 1) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var content_index = [];
+                var data_title = data.title.trim().toLowerCase();
+                var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                var data_url = decodeURIComponent(data.url);
+                var index_title = -1;
+                var index_content = -1;
+                var first_occur = -1;
+                // only match artiles with not empty titles and contents
+                if(data_title != '') {
+                  keywords.forEach(function(keyword, i) {
+                    index_title = data_title.indexOf(keyword);
+                    index_content = data_content.indexOf(keyword);
+                    if( index_title >= 0 || index_content >= 0 ){
+                      isMatch = true;
+                      if (i == 0) {
+                        first_occur = index_content;
+                      }
+                    }
+
+                  });
+                }
+                // show search results
+                if (isMatch) {
+                  matchcounts += 1;
+                  str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                  var content = data.content.trim().replace(/<[^>]+>/g,"");
+                  if (first_occur >= 0) {
+                    // cut out 100 characters
+                    var start = first_occur - 20;
+                    var end = first_occur + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if(start == 0){
+                      end = 50;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    var match_content = content.substring(start, end);
+                    // highlight all keywords
+                    keywords.forEach(function(keyword){
+                      var regS = new RegExp(keyword, "gi");
+                      match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                    });
+
+                    str += "<p class=\"search-result\">" + match_content +"...</p>"
+                  }
+                  str += "</li>";
+                }
+              })};
+            str += "</ul>";
+            if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+            if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+            $resultContent.innerHTML = str;
+          });
+          proceedsearch();
+        }
+      });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("K0wUDcLOoIdO1MgAChaWuDdo-gzGzoHsz", "0Il0CNDlBttlC1TOGB9UDSME");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+
+
+  
+    <script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+  
+</body>
+</html>
