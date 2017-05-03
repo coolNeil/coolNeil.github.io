@@ -74,7 +74,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="hexo," />
+  <meta name="keywords" content="模块化," />
 
 
 
@@ -90,17 +90,17 @@
 
 
 
-<meta name="description" content="环境搭建 Node.js git github账号  hexo 安装 npm install hexo -g   初始化 hexo init   生成静态页 hexo generate | hexo g   本地启动 hexo server   新建博客文章 hexo new [layout] &amp;quot;postName&amp;quot; 博文会自动生成在博客目录下source/_posts/post">
-<meta name="keywords" content="hexo">
+<meta name="description" content="JavaScript模块原始写法全局函数 123456function m1() &amp;#123;　　　　    //...&amp;#125;　　function m2() &amp;#123;　　　　    //...&amp;#125; 缺点：污染全局变量 对象写法123456789var module1 = new Object(&amp;#123;    _count: 0,    m1: function () &amp;#12">
+<meta name="keywords" content="模块化">
 <meta property="og:type" content="article">
-<meta property="og:title" content="使用hexo和github搭建个人博客">
-<meta property="og:url" content="http://yoursite.com/2017/04/07/使用hexo和github搭建个人博客/index.html">
+<meta property="og:title" content="JavaScript模块化">
+<meta property="og:url" content="http://yoursite.com/2017/05/03/JavaScript模块化/index.html">
 <meta property="og:site_name" content="简">
-<meta property="og:description" content="环境搭建 Node.js git github账号  hexo 安装 npm install hexo -g   初始化 hexo init   生成静态页 hexo generate | hexo g   本地启动 hexo server   新建博客文章 hexo new [layout] &amp;quot;postName&amp;quot; 博文会自动生成在博客目录下source/_posts/post">
-<meta property="og:updated_time" content="2017-04-16T12:21:33.189Z">
+<meta property="og:description" content="JavaScript模块原始写法全局函数 123456function m1() &amp;#123;　　　　    //...&amp;#125;　　function m2() &amp;#123;　　　　    //...&amp;#125; 缺点：污染全局变量 对象写法123456789var module1 = new Object(&amp;#123;    _count: 0,    m1: function () &amp;#12">
+<meta property="og:updated_time" content="2017-05-03T11:29:29.224Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="使用hexo和github搭建个人博客">
-<meta name="twitter:description" content="环境搭建 Node.js git github账号  hexo 安装 npm install hexo -g   初始化 hexo init   生成静态页 hexo generate | hexo g   本地启动 hexo server   新建博客文章 hexo new [layout] &amp;quot;postName&amp;quot; 博文会自动生成在博客目录下source/_posts/post">
+<meta name="twitter:title" content="JavaScript模块化">
+<meta name="twitter:description" content="JavaScript模块原始写法全局函数 123456function m1() &amp;#123;　　　　    //...&amp;#125;　　function m2() &amp;#123;　　　　    //...&amp;#125; 缺点：污染全局变量 对象写法123456789var module1 = new Object(&amp;#123;    _count: 0,    m1: function () &amp;#12">
 
 
 
@@ -128,13 +128,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/04/07/使用hexo和github搭建个人博客/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/05/03/JavaScript模块化/"/>
 
 
 
 
 
-  <title> 使用hexo和github搭建个人博客 | 简 </title>
+  <title> JavaScript模块化 | 简 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -297,7 +297,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/07/使用hexo和github搭建个人博客/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/03/JavaScript模块化/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Alan Yih">
@@ -318,7 +318,7 @@
             
             
               
-                使用hexo和github搭建个人博客
+                JavaScript模块化
               
             
           </h1>
@@ -333,8 +333,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-07T15:15:39+08:00">
-                2017-04-07
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-03T15:07:28+08:00">
+                2017-05-03
               </time>
             
 
@@ -356,8 +356,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Tools/" itemprop="url" rel="index">
-                    <span itemprop="name">Tools</span>
+                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaScript</span>
                   </a>
                 </span>
 
@@ -371,7 +371,7 @@
 
           
           
-             <span id="/2017/04/07/使用hexo和github搭建个人博客/" class="leancloud_visitors" data-flag-title="使用hexo和github搭建个人博客">
+             <span id="/2017/05/03/JavaScript模块化/" class="leancloud_visitors" data-flag-title="JavaScript模块化">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -400,103 +400,43 @@
       
 
       
-        <h3 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h3><ul>
-<li>Node.js</li>
-<li>git</li>
-<li>github账号</li>
-</ul>
-<h3 id="hexo"><a href="#hexo" class="headerlink" title="hexo"></a>hexo</h3><ul>
-<li>安装<ul>
-<li><code>npm install hexo -g</code></li>
-</ul>
-</li>
-<li>初始化<ul>
-<li><code>hexo init</code></li>
-</ul>
-</li>
-<li>生成静态页<ul>
-<li><code>hexo generate | hexo g</code></li>
-</ul>
-</li>
-<li>本地启动<ul>
-<li><code>hexo server</code></li>
+        <h1 id="JavaScript模块原始写法"><a href="#JavaScript模块原始写法" class="headerlink" title="JavaScript模块原始写法"></a>JavaScript模块原始写法</h1><h2 id="全局函数"><a href="#全局函数" class="headerlink" title="全局函数"></a>全局函数</h2> <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">m1</span>(<span class="params"></span>) </span>&#123;　　　　</div><div class="line">    <span class="comment">//...</span></div><div class="line">&#125;　　</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">m2</span>(<span class="params"></span>) </span>&#123;　　　　</div><div class="line">    <span class="comment">//...</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>缺点：污染全局变量</p>
+<h2 id="对象写法"><a href="#对象写法" class="headerlink" title="对象写法"></a>对象写法</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> module1 = <span class="keyword">new</span> <span class="built_in">Object</span>(&#123;</div><div class="line">    <span class="attr">_count</span>: <span class="number">0</span>,</div><div class="line">    <span class="attr">m1</span>: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">        <span class="comment">//...</span></div><div class="line">    &#125;,</div><div class="line">    <span class="attr">m2</span>: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">        <span class="comment">//...</span></div><div class="line">    &#125;</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>缺点：会暴露所有模块成员，例如此处的_count是可以被修改的<code>module1._count = 4</code></p>
+<h2 id="IIFE"><a href="#IIFE" class="headerlink" title="IIFE"></a>IIFE</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> module1 = (<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    _count: <span class="number">0</span>,</div><div class="line">    <span class="keyword">var</span> m1 = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">        <span class="comment">//...</span></div><div class="line">    &#125;;</div><div class="line">    <span class="keyword">var</span> m2 = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">        <span class="comment">//...</span></div><div class="line">    &#125;;</div><div class="line"></div><div class="line">    <span class="keyword">return</span> &#123;</div><div class="line">        <span class="attr">m1</span>: m1,</div><div class="line">        <span class="attr">m2</span>: m2</div><div class="line">    &#125;;</div><div class="line">&#125;)();</div></pre></td></tr></table></figure>
+<p>对上面的写法进行优化：</p>
+<h3 id="放大模式"><a href="#放大模式" class="headerlink" title="放大模式"></a>放大模式</h3><p>给module1添加了m3功能</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> module1 = (<span class="function"><span class="keyword">function</span> (<span class="params">mod</span>)</span>&#123;</div><div class="line">　　mod.m3 = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">　　　　<span class="comment">//...</span></div><div class="line">　　&#125;;</div><div class="line">　　<span class="keyword">return</span> mod;</div><div class="line">&#125;)(module1);</div></pre></td></tr></table></figure>
+<h3 id="宽放大模式"><a href="#宽放大模式" class="headerlink" title="宽放大模式"></a>宽放大模式</h3><p>避免可能出现的空对象</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> module1 = ( <span class="function"><span class="keyword">function</span> (<span class="params">mod</span>)</span>&#123;</div><div class="line">　　<span class="comment">//...</span></div><div class="line">　　<span class="keyword">return</span> mod;</div><div class="line">&#125;)(<span class="built_in">window</span>.module1 || &#123;&#125;);</div></pre></td></tr></table></figure>
+<h3 id="引入全局变量"><a href="#引入全局变量" class="headerlink" title="引入全局变量"></a>引入全局变量</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> module1 = (<span class="function"><span class="keyword">function</span> (<span class="params">mod, $</span>) </span>&#123;</div><div class="line">  <span class="comment">//...</span></div><div class="line">&#125;)(module1 || &#123;&#125;, jQuery);</div></pre></td></tr></table></figure>
+<h1 id="使用规范"><a href="#使用规范" class="headerlink" title="使用规范"></a>使用规范</h1><h2 id="AMD-Asynchronous-Module-Definition"><a href="#AMD-Asynchronous-Module-Definition" class="headerlink" title="AMD(Asynchronous Module Definition)"></a>AMD(Asynchronous Module Definition)</h2><p>使用说明：<a href="http://yslove.net/seajs/#use" target="_blank" rel="external">SeaJS</a></p>
+<h2 id="CMD-Common-Module-Definition"><a href="#CMD-Common-Module-Definition" class="headerlink" title="CMD(Common Module Definition)"></a>CMD(Common Module Definition)</h2><p>使用说明：<a href="http://www.requirejs.cn/" target="_blank" rel="external">RequireJS</a></p>
+<ul>
+<li>AMD与CMD区别<ol>
+<li>模块定义时对以来的处理不同（实际上就是语法区别）<ul>
+<li>AMD推崇依赖前置，在定义模块的时候就要声明其依赖的模块</li>
+<li>CMD推崇就近依赖，只有在用到某个模块的时候再去require</li>
 </ul>
 </li>
-<li>新建博客文章 <code>hexo new [layout] &quot;postName&quot;</code><ol>
-<li>博文会自动生成在博客目录下source/_posts/postName.md</li>
-<li>如果layout没有传入, 会使用_config.yml文件中的default_layout字段,默认是post</li>
+<li>对<strong>依赖模块</strong>的执行时机处理不同<ul>
+<li>AMD在加载模块完成后就会执行改模块，所有模块都加载执行完后会进入require的回调函数，执行主逻辑，这样的效果就是依赖模块的执行顺序和书写顺序不一定一致，看网络速度，哪个先下载下来，哪个先执行，但是主逻辑一定在所有依赖加载完成后才执行</li>
+<li>CMD加载完某个依赖模块后并不执行，只是下载而已（看到有require函数就去下载里面的模块），在所有依赖模块加载完成后进入主逻辑，遇到require语句的时候才执行对应的模块，这样模块的执行顺序和书写顺序是完全一致的</li>
+</ul>
+</li>
 </ol>
 </li>
-<li>生成静态页 <code>hexo g</code></li>
 </ul>
-<h3 id="部署到github"><a href="#部署到github" class="headerlink" title="部署到github"></a>部署到github</h3><ul>
-<li>github上建一个仓库，名字必须是your_user_name.github.io</li>
-<li><code>sh-keygen -t rsa -C &quot;your_email@example.com</code>生成公钥密钥</li>
-<li>将公钥放到github<ul>
-<li>验证是否通过 <code>ssh -T git@github.com</code></li>
-</ul>
+<h2 id="CommonJS"><a href="#CommonJS" class="headerlink" title="CommonJS"></a>CommonJS</h2><ul>
+<li><p>定义模块<br>根据CommonJS规范，一个单独的文件就是一个模块。每一个模块都是一个单独的作用域，也就是说，在该模块内部定义的变量，无法被其他模块读取，除非定义为global对象的属性</p>
 </li>
-<li><p>配置hexo关联到github（repo属性的值是你自己的仓库地址）</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">type: git</div><div class="line">repo: git@github.com:coolNeil/coolNeil.github.io.git</div><div class="line">branch: master</div></pre></td></tr></table></figure>
+<li><p>导出模块<br>module.exports 或者 exports</p>
 </li>
-<li><p><code>npm install hexo-deployer-git --save</code></p>
-</li>
-<li>发布到github<ul>
-<li><code>hexo deploy | hexo d</code></li>
-<li>然后在浏览器输入<code>coolNeil.github.io</code>就能够查看了</li>
-</ul>
-</li>
-<li>删除文章<ul>
-<li><code>hexo clean</code></li>
-<li>接着删除source/_posts/文件夹下面的文章</li>
-<li><code>hexo g</code></li>
-<li><code>hexo d</code></li>
-</ul>
+<li><p>加载模块<br>require();</p>
 </li>
 </ul>
-<h3 id="关联域名"><a href="#关联域名" class="headerlink" title="关联域名"></a>关联域名</h3><h3 id="hexo主题（next）"><a href="#hexo主题（next）" class="headerlink" title="hexo主题（next）"></a>hexo主题（next）</h3><ul>
-<li>下载<ul>
-<li><code>git clone https://github.com/iissnan/hexo-theme-next themes/next</code></li>
-</ul>
-</li>
-<li>启用<ul>
-<li>在主配置文件中设置<code>theme: next</code></li>
-<li>测试是否成功：<code>hexo s --debug</code></li>
-</ul>
-</li>
-<li>next主题选择<ul>
-<li>在主题配置文件中打开注释<code>scheme: Pisces</code>(此乃个人偏好)</li>
-</ul>
-</li>
-<li>设置语言<ul>
-<li>在主配置文件中：<code>language: zh-Hans</code></li>
-</ul>
-</li>
-<li>设置头像<ul>
-<li>在主题配置文件中修改avatar属性</li>
-</ul>
-</li>
-<li>设置作者昵称<ul>
-<li>在主配置文件中修改author属性</li>
-</ul>
-</li>
-<li>设置站点描述<ul>
-<li>在主配置文件中修改description属性</li>
-</ul>
-</li>
-</ul>
-<h3 id="部分问题"><a href="#部分问题" class="headerlink" title="部分问题"></a>部分问题</h3><ul>
-<li>分类页404解决(标签页类似)<ul>
-<li><code>hexo new page &quot;categories&quot;</code></li>
-<li>编辑新建的页面<ul>
-<li>添加<code>type: &quot;categories&quot;</code></li>
-<li>添加<code>comments: false</code></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
+<h1 id="ES6模块化"><a href="#ES6模块化" class="headerlink" title="ES6模块化"></a>ES6模块化</h1>
       
     </div>
 
@@ -546,7 +486,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/hexo/" rel="tag"># hexo</a>
+            <a href="/tags/模块化/" rel="tag"># 模块化</a>
           
         </div>
       
@@ -559,8 +499,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/04/07/Sublime-Text-3个人常用插件及设置/" rel="next" title="Sublime Text 3个人常用插件及设置">
-                <i class="fa fa-chevron-left"></i> Sublime Text 3个人常用插件及设置
+              <a href="/2017/05/03/RequireJS使用入门/" rel="next" title="RequireJS使用入门">
+                <i class="fa fa-chevron-left"></i> RequireJS使用入门
               </a>
             
           </div>
@@ -568,6 +508,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/04/26/Git使用教程/" rel="prev" title="Git使用教程">
+                Git使用教程 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -692,7 +636,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#环境搭建"><span class="nav-number">1.</span> <span class="nav-text">环境搭建</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo"><span class="nav-number">2.</span> <span class="nav-text">hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#部署到github"><span class="nav-number">3.</span> <span class="nav-text">部署到github</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关联域名"><span class="nav-number">4.</span> <span class="nav-text">关联域名</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo主题（next）"><span class="nav-number">5.</span> <span class="nav-text">hexo主题（next）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#部分问题"><span class="nav-number">6.</span> <span class="nav-text">部分问题</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#JavaScript模块原始写法"><span class="nav-number">1.</span> <span class="nav-text">JavaScript模块原始写法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#全局函数"><span class="nav-number">1.1.</span> <span class="nav-text">全局函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#对象写法"><span class="nav-number">1.2.</span> <span class="nav-text">对象写法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#IIFE"><span class="nav-number">1.3.</span> <span class="nav-text">IIFE</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#放大模式"><span class="nav-number">1.3.1.</span> <span class="nav-text">放大模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#宽放大模式"><span class="nav-number">1.3.2.</span> <span class="nav-text">宽放大模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#引入全局变量"><span class="nav-number">1.3.3.</span> <span class="nav-text">引入全局变量</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#使用规范"><span class="nav-number">2.</span> <span class="nav-text">使用规范</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#AMD-Asynchronous-Module-Definition"><span class="nav-number">2.1.</span> <span class="nav-text">AMD(Asynchronous Module Definition)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CMD-Common-Module-Definition"><span class="nav-number">2.2.</span> <span class="nav-text">CMD(Common Module Definition)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CommonJS"><span class="nav-number">2.3.</span> <span class="nav-text">CommonJS</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ES6模块化"><span class="nav-number">3.</span> <span class="nav-text">ES6模块化</span></a></li></ol></div>
             
 
           </div>
